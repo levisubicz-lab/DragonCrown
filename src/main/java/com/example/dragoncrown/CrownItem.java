@@ -3,7 +3,6 @@ package com.example.dragoncrown;
 import io.papermc.paper.datacomponent.DataComponentTypes;
 import io.papermc.paper.datacomponent.item.Equippable;
 import io.papermc.paper.datacomponent.item.ItemLore;
-import io.papermc.paper.datacomponent.item.Unbreakable;
 import net.kyori.adventure.key.Key;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextDecoration;
@@ -31,7 +30,7 @@ public final class CrownItem {
         crown.setData(DataComponentTypes.EQUIPPABLE,
                 Equippable.equippable(EquipmentSlot.HEAD).build());
 
-        crown.setData(DataComponentTypes.UNBREAKABLE, Unbreakable.unbreakable());
+        crown.setData(DataComponentTypes.UNBREAKABLE);
 
         crown.setData(DataComponentTypes.CUSTOM_NAME,
                 MM.deserialize("<yellow>Dragon Crown</yellow>")
