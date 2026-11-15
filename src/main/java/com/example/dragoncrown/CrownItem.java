@@ -23,7 +23,7 @@ public final class CrownItem {
     private CrownItem() {}
 
     public static ItemStack create() {
-        ItemStack crown = new ItemStack(Material.IRON_HELMET);
+        ItemStack crown = new ItemStack(Material.PAPER);
 
         crown.setData(DataComponentTypes.ITEM_MODEL, MODEL_KEY);
 
